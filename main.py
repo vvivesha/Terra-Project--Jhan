@@ -1,0 +1,182 @@
+print("Welcome to A Life of Lore")
+print("")
+print("Some happy notes from the dev:")
+print("1) pretty plz answer yes/no questions with a 'yes' or a 'no'.")
+print('''2) Text lacking "" (quotation marks) is a system message; dialouge takes the form of "CHARACTER: 'Hiya!'"''')
+print("3) In this game, you have 5 goals to achieve.")
+print("")
+
+cont = input("Are you with me, still?")
+if cont == "yes":
+    print("Perfect! As I was saying, your first goal is to MAKE LUCY HAPPY. No matter what.")
+    intro = input("... got it?? (yes/no)")
+    if intro == "yes":
+        print("Loading..")
+        print(".")
+        print("..")
+        print("...")
+
+print(f'"Dialouge check" (Ignore this, pretty please!)')
+
+name = input("What is your character's name? Name: ")
+
+print('LUCY: "OH MY GOSH!!"')
+cont = input("Press enter to see the next dialouge: ")
+if cont == "":
+    print(f'''LUCY: "Is it REALLY {name}?!?!?!?!"''')
+q_one = input("Are you really " + name + "? (yes/no): ")
+if q_one == "no":
+    print(f'''LUCY: "...then, who ARE you?"''')
+    name = input('''<UNKNOWN>: "I am..."  <Who even are you?>  ''')
+    print(f'{name}: "I am {name}."')
+if q_one == "yes":
+    print("*You are caught off guard.*")
+    print(f'--{name}:  "Yup. That\'s me." (a)')
+    print(f'--{name}: "It sure is. Who are you?" (b)')
+    print(f'{name}: *I\'ve got to say something.*')
+    d1 = input("TERMINAL: <Choose which to say> ")
+    if d1 == "a":
+        print(f'{name}:  "Yup. That\'s me." (a)')
+    if d1 == "b":
+        print(f'{name}: "It sure is. Who are you?" (b)')
+        next = input(">>>>Continue? (Press enter)")
+        print('''LUCY: "Oh, I\'m Lucy. I used to live in this neighborhood. Wanna hear a story sometime?"''')
+        next = input(">>>>Continue? (Press enter)")
+        print(f'{name}: "Sure, how about right now?"')
+        next = input(">>>>Continue? (Press enter)")
+        print('''LUCY: "Yay! But it's a very long story... are you really really sure?"''')
+        next = input("TERMINAL: <Are you really really sure??>  (y/n)")
+        if next == "y":
+            print(f'{name}: "For sure!!')
+            next = input(">>>>Continue? (Press enter)")
+            print("TERMINAL: <You were dreaming. Unfortunately, you didn/'t know that Lucy/'s dream is eternally long... I don't even know how to break the news (that you slept away many centuries) to you once you wake up..")
+            next = input(">>>>Continue? (Press enter)")
+            print("TERMINAL: <Congratulations! Or not...! You/'ve won the Eternal Storytime Dreamer badge. [Restart the game and see what you missed out on!  :D  ]")
+
+
+
+    if d1 =="a":
+        print("PLEASE PLEASEEEE I need your autograph!! I'm Lucy, btw! I'll be your neighbor :D")
+        grant1 = input("Give autograph to Lucy? (yes/no)")
+        if grant1 == "no":
+            print("*You look at Lucy again. She's excited, and you don't want to disappoint.*")
+            next = input(">>>>Continue? (Press enter)")
+            print(f'{name}')
+            if grant1 == "yes":
+                print("<+5 excitement> (to LUCY)")
+                print("*You grab the red pen and take care to make an elegant signature.*")
+                cont2 = input("Continue? (y/n)")
+                if cont2 == "y":
+                    print("<+10 happiness> (to LUCY)")
+                    print('''LUCY: "Thanksssss!"''')
+                    if cont2 == "n":
+                        print('''LUCY: "Oh, that's fine. You can keep the pen."''')
+                        cont3 = input("Continue? (Press enter)")
+                        if cont3 == "":
+                            print("<-15 happiness> (from LUCY)")
+                            print("I don't know how you could ever have the guts to disappoint our dear Lucy :<")
+                            next = input(">>>>Continue? (Press enter)")
+                            print("TERMINAL: <You just won Disappoint Lucy badge! That was a sad attempt... [Restart the game and try again!!]")
+print("TERMINAL: <The sunlight is warm on your cheek. You were dreaming.>")
+print("Right..?")
+print(f'{name}: *Must\'ve been.*  (a)')
+print(f'{name}: *That was quite the vivid dream.*  (b)')
+print("<Pick an option.>")
+option = input(f'TERMINAL: <Which do you pick?>')
+if option == "a":
+    print("*Must\'ve been.*'")
+if option == "b":
+    print("*That was quite the vivid dream.*")
+cont = input(">>>continue?")
+print("You lift yourself off of your bed.")
+print("Woah!")
+print("You forgot to make a TASKLIST.")
+print("TERMINAL: <What will you do next?")
+print("Wing it! (a)")
+print("Grab that pen and the notepad! (b)")
+option = input("<Pick an option>")
+if option == "b":
+    print("*You were about to write your to-do list... but you can't seem to recall where exactly you are at the moment, nor why.")
+    print("Scream in frustration. (a)")
+    print("Go outside and find someone who can fill in the blanks. (b)")
+    print(" ")
+    panic = input("TERMINAL: <What will you do?>  (a/b)")
+    if panic == "a":
+        print(f'{name}: "AAAAAAAAAAAAAAAAAAAAAAAAAAUUUUUUUUUUUUUUUUUUGGGGGGGGGGGHHHHHHHHHH!')
+        print("...")
+        print("Funnily enough, you feel better. Matter of fact, you're feeling up for a walk! Isn't that a wonderful idea?")
+        answer = input("Well, wasn't it??  (y/n)")
+        if answer == "y":
+            print("Perfect!")
+            print("*You make your way to the door of your bedroom.*")
+            next = input(">>>>Continue? (Press enter)")
+            print("*You twist the knob on the door, and open it.*   Someone is sitting at your mahagony breakfast table.")
+            print(f'{name}: "Wh-who are you??')
+            next = input(">>>>Continue? (Press enter)")
+            print('''UNKNOWN LADY: "Hello. I'm Gisela. I'll be your guide during your stay in our wonderful neighborhood. ''')
+            next = input(">>>>Continue? (Press enter)")
+            print(f'{name}: "Cool, but how did you get into my house on the first day??')
+            print("*You glance at the tabletop. There is a... very dystopian-looking helmet resting atop your newly purchased placemats.*")
+            next = input(">>>>Continue? (Press enter)")
+            print('''GUIDE LADY: "Oh, that? ... Well, just a magic trick, is all!''')
+            next = input(">>>>Continue? (Press enter)")
+            print(f'{name}: "Ohhhhhhh okay. So--uh, where can I purchase some eggs to fry for breakfast?"')
+            next = input(">>>>Continue? (Press enter)")
+            print('''GUIDE LADY: "I'll show you around after you try out this, er--bike helmet! We always take our new arrivals seriously. We are a small community, and the more the merrier. What other way to welcome our newest neighbor in with a bike ride through the neighborhood?"''')
+            next = input(f'{name}: "Well, if you insist... but I am not going to be wearing that helmet in front of you, right?"')
+            print('''GUIDE LADY: "...Of course not!"''')
+            print("*The lady stands up, abruptly*")
+            next = input(">>>>Continue? (Press enter)")
+            print("You feel uneasy.")
+            print(" ")
+            print('''Say: "Hey, maybe I should go." and escape through the bedroom window.  (a)''')
+            print('''Say: "...okay...." and allow GUIDE LADY to strap that very intimidating helmet onto your head.  (b)''')
+            fate = input("TERMINAL: <Which do you choose to do next?>  (a/b)")
+            if fate == "b":
+                print("I don't think that that's a good idea.")
+                print("*You decide against wearing the helmet.*")
+                print("*You bolt for the window, and manage to escape. True to her word, you see bikes as you shatter the window of your first story bedroom, and take off. Embarassment fuels your adrenaline. Better safe than sorry.*")
+                award = input(">>>>Continue? (Press enter)")
+                print("TERMINAL: <Congratulations on your escape! It seems that those scary people got the wrong person. Enjoy your badge: Early Escape.")
+                print("TERMINAL: <Restart the game to see what other paths you could have taken!>")
+            if fate == "a":
+                print("*You bolt for the window, and manage to escape. True to her word, you see bikes as you shatter the window of your first story bedroom, and take off. Embarassment fuels your adrenaline. Better safe than sorry.*")
+                award = input(">>>>Continue? (Press enter)")
+                print("TERMINAL: <Congratulations on your escape! It seems that those scary people got the wrong person. Enjoy your badge: Early Escape.")
+                print("TERMINAL: <Restart the game to see what other paths you could have taken!>")
+if option == "a":
+    print("*You open the window. A gust of wind has been unleased at you.")
+    print("..")
+    choice = input("<Look around?>")
+    print("(y/n)")
+    if choice == "n":
+        print(f'{name}: "I really should read whatever is inside of that envelope."')
+        print("*You remove an adorable welcome card from the envelope.*")
+        print("")
+        print("It reads:")
+        print("'Congratulations for winning an entry into: Operation Anti-Yap 001!'")
+        print("     'This is a remarkable achievement. Only the worst of the worst at social cues could ever win this...'")
+        print(f'{name}: "...that was pretty mean.."')
+        read = input("TERMINAL: <Keep reading?>  (y/n)")
+        if read == "y":
+            print("'But don't be downcast!! There is a massive sum of moolah that you can win. All you have to do is agree to the Terms of Use......")
+            print(f'{name}: "I am not falling for some scam on my first morning at my first own house!"')
+
+    if choice == "y":
+        print("Some of the blinds on this window are missing. You look left, and see your twin-sized bed. Not ideal, but it will do.")
+        print("To your right, you spot an envelope.")
+        option = input("<open it?>")
+        print("(y/n)")
+        if option == "y":
+            option = input("<This envelope seems to have been tampered with. Proceed?>")
+            print("(y/n)")
+            if option == "y":
+                print("There is a folded note. *You unfold the parchment.*")
+                print('''"Your mortage at Meadow Housing is outstanding. In order to keep your house, you must find work."''')
+                print('''"Here is a giftcard to kickstart your journey."''')
+                print("*You rip the giftcard off of the paper. It seems legit.*")
+                print('''"One-thousand silvers..." you can help but whisper.''')
+                next = input(">>>>Continue? (Press enter)")
+                print("You/'re going to be sooo rich-- you might even be spared from your mortgage! How comical. The sender has no clue that you chose to purchase the cheapest house on the street.")
+                next = input(">>>>Continue>? (Press enter)")
+                print("TERMINAL: <Congratulations on not neglecting your mail-reading duties! You/'ve earned Lucky badge! [Restart the game to earn more badges!]")
